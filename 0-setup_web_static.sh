@@ -14,7 +14,7 @@ sudo echo $'<html>\n\t<head>\n\t</head>\n\t<body>\n\t\tHolberton School\n\t</bod
 #create a symbolic link
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 #Give ownership
-sudo chown -R ubuntu:ubuntu /data/
+sudo chown -hR ubuntu:ubuntu /data/
 #configuration to serve the content
 new_string="a location /hbnb_static/\n\t{\n\t\talias /data/web_static/current/;\n\t}"
 sudo sed -i "/server_name _;/$new_string" /etc/nginx/sites-available/default
