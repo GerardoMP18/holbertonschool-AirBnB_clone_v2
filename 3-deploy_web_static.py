@@ -65,7 +65,7 @@ def deploy():
     function deploy"""
     callFunction = do_pack()
 
-    if callfunction is None:
+    if callFunction is None:
         return False
     else:
         new = do_deploy(archive_path)
