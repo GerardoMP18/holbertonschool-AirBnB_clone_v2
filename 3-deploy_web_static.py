@@ -67,6 +67,5 @@ def deploy():
 
     if callFunction is None:
         return False
-    else:
-        new = do_deploy(archive_path)
-        return new
+    new = do_deploy(callFunction)
+    return new
