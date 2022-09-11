@@ -35,7 +35,7 @@ def C_IsFun(text):
 
 @app.route("/python/", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def python_Is_Cool(text="cool"):
+def python_Is_Cool(text="is cool"):
     """
     Function that when passing arguments shows the
     passed name and character "_" is changed by spaces
