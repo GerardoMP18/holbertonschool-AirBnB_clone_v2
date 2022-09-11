@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Creaction of class db_storage"""
+""" Creaction of class db_storage - """
 from models.base_model import BaseModel, Base
 import os
 from sqlalchemy import create_engine
