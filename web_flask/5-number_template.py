@@ -56,7 +56,7 @@ def number_Template(n):
     Function that when passing arguments in the number_template
     route a number is displayed in an html structure
     """
-    return render_template('index.html', n=n) 
+    return render_template('index.html', n=n)
 
 
 if __name__ == "__main__":
