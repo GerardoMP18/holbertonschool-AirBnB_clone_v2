@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """ State Module for HBNB project """
-from models.base_model import BaseModel
-from sqlalchemy import Column, String
+from models.base_model import BaseModel, Base
+from sqlalchemy import Column
+from sqlalchemy import String
+from sqlalchemy.orm import relationship
 
-"""
-class Amenity(BaseModel):
-    
-    __tablename__ = 'amenities'
+
+class Amenity(BaseModel, Base):
+    """
+    Amenity class
+    """
+    __tablename__ = "amenities"
     name = Column(String(128), nullable=False)
-"""
-
-class Amenity(BaseModel):
-    name = ""
+    place_amenities = relationship("Place", secondary="place_amenity",
+                                   viewonly=False)
